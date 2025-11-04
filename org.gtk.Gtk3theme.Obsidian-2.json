@@ -4,7 +4,7 @@
    "runtime":"org.freedesktop.Sdk",
    "build-extension":true,
    "sdk":"org.freedesktop.Sdk",
-   "runtime-version":"25.08",
+   "runtime-version":"23.08",
    "appstream-compose":false,
    "separate-locales":false,
    "modules":[
@@ -33,7 +33,8 @@
          "buildsystem":"simple",
          "build-commands":[
             "mkdir -p ${FLATPAK_DEST}/share/appdata",
-            "cp org.gtk.Gtk3theme.Obsidian-2.metainfo.xml ${FLATPAK_DEST}/share/appdata"
+            "cp org.gtk.Gtk3theme.Obsidian-2.metainfo.xml ${FLATPAK_DEST}/share/appdata",
+            "appstream-compose --basename=org.gtk.Gtk3theme.Obsidian-2 --prefix=${FLATPAK_DEST} --origin=flatpak org.gtk.Gtk3theme.Obsidian-2"
          ],
          "sources":[
             {

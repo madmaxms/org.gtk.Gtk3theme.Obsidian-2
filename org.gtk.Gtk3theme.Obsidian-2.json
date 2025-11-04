@@ -5,6 +5,7 @@
    "build-extension":true,
    "sdk":"org.freedesktop.Sdk",
    "runtime-version":"25.08",
+   "appstream-compose":false,
    "separate-locales":false,
    "modules":[
       {

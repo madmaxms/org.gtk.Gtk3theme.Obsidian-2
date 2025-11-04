@@ -32,7 +32,7 @@
          "buildsystem":"simple",
          "build-commands":[
             "mkdir -p ${FLATPAK_DEST}/share/appdata",
-            "cp org.gtk.Gtk3theme.Obsidian-2.metainfo.xml ${FLATPAK_DEST}/share/appdata",
+            "cp org.gtk.Gtk3theme.Obsidian-2.metainfo.xml ${FLATPAK_DEST}/share/appdata"
          ],
          "sources":[
             {
